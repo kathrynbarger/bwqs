@@ -3,7 +3,7 @@ int<lower=0> N;          // number of individual
 int<lower=0> C;          // number of chemicals
 matrix[N,C] X;		       // matrix of indipendent variable
 vector[C] Dalp;          // vector of the Dirichlet coefficients
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
@@ -36,7 +36,7 @@ int<lower=0> N;          // number of individual
 int<lower=0> C;          // number of chemicals
 matrix[N,C] X;		       // matrix of indipendent variable
 vector[C] Dalp;          // vector of the Dirichlet coefficients
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
@@ -70,7 +70,7 @@ int<lower=0> N;          // number of individual
 int<lower=0> C;          // number of chemicals
 matrix[N,C] X;		       // matrix of indipendent variable
 vector[C] Dalp;          // vector of the Dirichlet coefficients
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
@@ -105,7 +105,7 @@ int<lower=0> K;          // number of covariates
 matrix[N,C] X;		       // matrix of indipendent variable
 matrix[N,K] KV;		       // matrix of covariates
 vector[C] Dalp;          // vector of the Dirichlet coefficients
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
@@ -142,7 +142,7 @@ int<lower=0> K;          // number of covariates
 matrix[N,C] X;		       // matrix of indipendent variable
 matrix[N,K] KV;		       // matrix of covariates
 vector[C] Dalp;          // vector of the Dirichlet coefficients
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
@@ -179,7 +179,7 @@ int<lower=0> K;          // number of covariates
 matrix[N,C] X;		       // matrix of indipendent variable
 matrix[N,K] KV;		       // matrix of covariates
 vector[C] Dalp;          // vector of the Dirichlet coefficients
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
