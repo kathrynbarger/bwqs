@@ -6,7 +6,7 @@ matrix[N,C1] XC1;	        // matrix of first mix
 matrix[N,C2] XC2;	        // matrix of second mix
 vector[C1] DalpC1;        // vector of the Dirichlet coefficients for first mix
 vector[C2] DalpC2;        // vector of the Dirichlet coefficients for second mix
-real y[N];                // outcome continuos variable
+array[N] real y;                // outcome continuos variable
 }
 parameters {
 real beta0;               // intercepts
@@ -48,7 +48,7 @@ matrix[N,C2] XC2;	       // matrix of elements in the second mix
 matrix[N,K] KV;	         // matrix of covariates
 vector[C1] DalpC1;       // vector of the Dirichlet coefficients for first mix
 vector[C2] DalpC2;       // vector of the Dirichlet coefficients for second mix
-real y[N];               // outcome continuos variable
+array[N] real y;               // outcome continuos variable
 }
 parameters {
 real beta0;              // intercepts
